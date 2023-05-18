@@ -5,10 +5,10 @@
             "name": "Launch",
             "type": "lldb",
             "request": "launch",
-            "program": "${workspaceFolder}/executable",
+            "program": "${workspaceFolder}/udp_server",
             "args": [],
             "cwd": "${workspaceFolder}",
-            "preLaunchTask": "build"
+        // "preLaunchTask": "build"
         }
     ]
 }

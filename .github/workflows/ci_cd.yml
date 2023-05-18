@@ -24,13 +24,7 @@ jobs:
         run: echo "LD_LIBRARY_PATH=$(pwd)" >> $GITHUB_ENV
       
       - name: Build the library with in the development environment and create tests
-        run: make test
-
-      - name: Run the tests
-        run: ./executable
-      
-      - name: Check for memory leaks
-        run: make memory_check
+        run: make all
       
       - name: Upload valgrind results
         uses: actions/upload-artifact@v3
